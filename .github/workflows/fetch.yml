@@ -1,0 +1,14 @@
+name: Fetch Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Fetch data
+        run: echo "Fetching data..."
